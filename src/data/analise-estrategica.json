@@ -1,0 +1,79 @@
+{
+  "mercado": {
+    "descricao": "Mercado brasileiro e latino-americano de radiocomunicação",
+    "fatoresCrescimento": [
+      {
+        "fator": "Expansão de Redes Privadas",
+        "descricao": "Crescente adoção de redes LTE/5G privadas por empresas brasileiras, impulsionada pela necessidade de soluções de conectividade personalizadas e seguras."
+      },
+      {
+        "fator": "Digitalização de Setores Críticos",
+        "descricao": "Adoção tecnológica contínua em setores-chave brasileiros como agronegócio (agricultura de precisão, IoT) e segurança pública (comunicações críticas) cria demanda sustentada por soluções de conectividade robustas."
+      }
+    ],
+    "paisageCompetitiva": {
+      "posicionamento": "A ARS Eletrônica se posiciona como fornecedora essencial de componentes passivos de RF para todo o ecossistema de implantações de redes privadas, tornando-se parceira complementar aos grandes provedores de tecnologia e integradores.",
+      "diferenciais": [
+        "Fabricação 100% nacional",
+        "Agilidade nas entregas",
+        "Homologação ANATEL para todos produtos",
+        "Suporte técnico especializado",
+        "Personalização de produtos"
+      ],
+      "concorrentes": [
+        {
+          "nome": "Nokia, Ericsson, Huawei",
+          "tipo": "Provedores Globais de Tecnologia (Parceiros de Ecossistema)",
+          "relacao": "Fornecem a infraestrutura principal da rede para redes privadas. Os produtos da ARS Eletrônica são complementares."
+        },
+        {
+          "nome": "Claro/Embratel, TIM, Vivo",
+          "tipo": "Integradores de Sistemas / Operadoras (Clientes/Parceiros)",
+          "relacao": "Implantam redes privadas utilizando componentes de vários fornecedores, incluindo ARS Eletrônica."
+        }
+      ]
+    }
+  },
+  "aplicacoesPorSegmento": {
+    "seguranca": {
+      "necessidades": "Comunicação confiável e segura em situações críticas para polícia, bombeiros e defesa civil.",
+      "produtosChave": [
+        "Antenas móveis com base magnética",
+        "Duplexadores para repetidoras",
+        "Sistemas de combinação para múltiplos canais"
+      ]
+    },
+    "agronegocioRTK": {
+      "necessidades": "Conectividade em áreas rurais extensas para IoT, automação de veículos e posicionamento de alta precisão.",
+      "produtosChave": [
+        "Antenas de alta potência",
+        "Antenas GPS de precisão",
+        "Cabos de baixa perda para longas distâncias"
+      ]
+    },
+    "mineracaoIndustria": {
+      "necessidades": "Comunicação confiável em ambientes hostis para despacho, controle remoto e segurança.",
+      "produtosChave": [
+        "Antenas robustas para ambientes severos",
+        "Filtros duplexadores de alta potência",
+        "Conectores de alto desempenho"
+      ]
+    },
+    "utilitiesTransporte": {
+      "necessidades": "Comunicações para smart grid, gerenciamento de frotas e comunicações ferroviárias.",
+      "produtosChave": [
+        "Antenas setoriais e omnidirecionais",
+        "Combinadores para múltiplos canais",
+        "Cabos irradiantes para túneis"
+      ]
+    },
+    "lteIoT": {
+      "necessidades": "Componentes fundamentais para construção de redes wireless privadas e públicas.",
+      "produtosChave": [
+        "Antenas LTE (banda 28, 700MHz)",
+        "Antenas multi-banda",
+        "Antenas compactas para dispositivos IoT"
+      ]
+    }
+  }
+}

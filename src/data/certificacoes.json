@@ -1,0 +1,44 @@
+{
+  "descricao": "A ARS Eletrônica possui diversas certificações que comprovam a qualidade e conformidade de nossos produtos com as normas e padrões nacionais e internacionais.",
+  "nacionais": [
+    {
+      "nome": "Homologação ANATEL",
+      "descricao": "Todos os produtos da ARS Eletrônica são homologados pela Agência Nacional de Telecomunicações (ANATEL), garantindo conformidade com as regulamentações brasileiras de telecomunicações.",
+      "aplicacao": "Exigido para comercialização de equipamentos de comunicação no Brasil"
+    },
+    {
+      "nome": "ISO 9001:2015",
+      "descricao": "Certificação de Sistema de Gestão da Qualidade, demonstrando nosso compromisso com processos padronizados e melhoria contínua.",
+      "aplicacao": "Gestão de qualidade para todos os processos de fabricação"
+    },
+    {
+      "nome": "INMETRO",
+      "descricao": "Certificação do Instituto Nacional de Metrologia, Qualidade e Tecnologia para produtos específicos que requerem avaliação de conformidade.",
+      "aplicacao": "Produtos específicos conforme regulamentação"
+    }
+  ],
+  "internacionais": [
+    {
+      "nome": "CE (Conformité Européenne)",
+      "descricao": "Certificação que confirma que nossos produtos atendem aos padrões de saúde, segurança e proteção ambiental da União Europeia.",
+      "aplicacao": "Produtos exportados para o mercado europeu"
+    },
+    {
+      "nome": "FCC (Federal Communications Commission)",
+      "descricao": "Certificação americana para equipamentos de comunicação, garantindo que nossos produtos cumprem os padrões de interferência eletromagnética dos EUA.",
+      "aplicacao": "Produtos exportados para o mercado norte-americano"
+    },
+    {
+      "nome": "RoHS Compliance",
+      "descricao": "Conformidade com a diretiva de Restrição de Substâncias Perigosas, garantindo que nossos produtos são fabricados sem o uso de materiais nocivos ao meio ambiente.",
+      "aplicacao": "Todos os produtos eletrônicos"
+    }
+  ],
+  "gestao": [
+    {
+      "nome": "ISO 14001:2015",
+      "descricao": "Sistema de Gestão Ambiental, demonstrando nosso compromisso com práticas sustentáveis e responsabilidade ambiental.",
+      "aplicacao": "Processos de fabricação e gestão de resíduos"
+    }
+  ]
+}

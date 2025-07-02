@@ -1,0 +1,208 @@
+{
+  "antenas": {
+    "moveis": [
+      {
+        "nome": "Antena móvel MU-55 LTE",
+        "modelo": "MU-55 LTE",
+        "codigos": ["501695"],
+        "descricao": "Antena de ganho com baixo perfil e base padrão NMO, projetada para aplicações móveis em sistemas LTE na banda 28.",
+        "especificacoes": {
+          "frequencia": "698 / 806 MHz",
+          "ganho": "3 dBi",
+          "vswr": "≤ 1,8:1",
+          "impedancia": "50 Ω",
+          "potenciaMaxima": "150 Watts",
+          "peso": "0,163 Kg",
+          "conector": "SMA-1"
+        },
+        "aplicacoes": ["Comunicação móvel LTE", "Sistemas banda 28"]
+      },
+      {
+        "nome": "Antena móvel ASA-400EMU",
+        "modelo": "ASA-400EMU",
+        "codigos": ["501080"],
+        "descricao": "Antena móvel omnidirecional 2x5/8 de onda para aplicações UHF.",
+        "especificacoes": {
+          "frequencia": "340-470 MHz",
+          "ganho": "7,15 dBi",
+          "vswr": "≤ 1,5:1",
+          "impedancia": "50 Ω",
+          "potenciaMaxima": "100 Watts",
+          "peso": "194 g",
+          "conector": "UM-6"
+        },
+        "aplicacoes": ["Comunicação UHF", "Aplicações móveis"]
+      },
+      {
+        "nome": "Antena móvel MV-00A",
+        "modelo": "MV-00A",
+        "codigos": ["501014", "501015"],
+        "descricao": "Antena móvel omnidirecional 1/4 de onda para aplicações VHF/UHF.",
+        "especificacoes": {
+          "frequencia": "130-512 MHz",
+          "ganho": "2,15 dBi",
+          "vswr": "≤ 1,5:1",
+          "impedancia": "50 Ω",
+          "potenciaMaxima": "100 Watts",
+          "peso": "265 g",
+          "conector": "UM-5 / UM-6"
+        },
+        "aplicacoes": ["Comunicação VHF", "Comunicação UHF", "Ampla faixa"]
+      }
+    ],
+    "omnidirecionais": [
+      {
+        "nome": "Antena omnidirecional AO-20",
+        "modelo": "AO-20",
+        "codigos": ["502001"],
+        "descricao": "Antena omnidirecional de alta performance para estações fixas.",
+        "especificacoes": {
+          "frequencia": "136-174 MHz",
+          "ganho": "6 dBi",
+          "vswr": "≤ 1,5:1",
+          "impedancia": "50 Ω",
+          "potenciaMaxima": "200 Watts"
+        },
+        "aplicacoes": ["Estações fixas VHF", "Cobertura omnidirecional"]
+      }
+    ],
+    "direcionais": [
+      {
+        "nome": "Antena direcional AD-14",
+        "modelo": "AD-14",
+        "codigos": ["503001"],
+        "descricao": "Antena direcional Yagi para aplicações de longa distância.",
+        "especificacoes": {
+          "frequencia": "136-174 MHz",
+          "ganho": "14 dBi",
+          "vswr": "≤ 1,5:1",
+          "impedancia": "50 Ω",
+          "potenciaMaxima": "200 Watts"
+        },
+        "aplicacoes": [
+          "Comunicação ponto a ponto",
+          "Enlaces de longa distância"
+        ]
+      }
+    ]
+  },
+  "duplexadores": [
+    {
+      "nome": "Duplexador FDV/FDU-6",
+      "modelo": "FDV-6A/B / FDU-6E",
+      "codigos": ["505310", "505311", "505312"],
+      "descricao": "Duplexador de seis cavidades para sistemas fixos de radiocomunicação de alto tráfego.",
+      "especificacoes": {
+        "frequencia": "130/148MHz, 148/174MHz, 380/512MHz",
+        "vswr": "≤ 1,5:1",
+        "impedancia": "50 Ω",
+        "potenciaMaxima": "150 Watts (VHF) / 120 Watts (UHF)",
+        "perda": "≤ 1,5 dB",
+        "separacao": "0,6 MHz",
+        "isolacao": "80 dB",
+        "peso": "14,6 Kg"
+      },
+      "aplicacoes": ["Sistemas repetidores", "Alto tráfego", "Comunicação fixa"]
+    },
+    {
+      "nome": "Duplexador DUMAX-4E",
+      "modelo": "DUMAX-4E",
+      "codigos": ["505011"],
+      "descricao": "Duplexador de alta performance com cavidades de 8 polegadas.",
+      "especificacoes": {
+        "frequencia": "380/470MHz",
+        "vswr": "≤ 1,3:1",
+        "impedancia": "50 Ω",
+        "potenciaMaxima": "300 Watts",
+        "perda": "≤ 0,8 dB",
+        "separacao": "2,5 a 10MHz",
+        "isolacao": "90 dB",
+        "peso": "14,5 Kg"
+      },
+      "aplicacoes": ["Alta potência", "Sistemas profissionais", "UHF"]
+    }
+  ],
+  "conectores": {
+    "serieN": [
+      {
+        "nome": "Conector N macho reto",
+        "modelo": "N-M",
+        "codigos": ["507001"],
+        "descricao": "Conector N macho para aplicações profissionais de RF.",
+        "especificacoes": {
+          "impedancia": "50 Ω",
+          "frequenciaMaxima": "11 GHz",
+          "vswr": "≤ 1,15:1"
+        },
+        "aplicacoes": ["Conexões RF profissionais", "Alta frequência"]
+      }
+    ],
+    "serieBNC": [
+      {
+        "nome": "Conector BNC macho",
+        "modelo": "BNC-M",
+        "codigos": ["507101"],
+        "descricao": "Conector BNC para aplicações de teste e instrumentação.",
+        "especificacoes": {
+          "impedancia": "50 Ω",
+          "frequenciaMaxima": "4 GHz"
+        },
+        "aplicacoes": ["Instrumentação", "Teste de equipamentos"]
+      }
+    ],
+    "serieSMA": [
+      {
+        "nome": "Conector SMA macho",
+        "modelo": "SMA-M",
+        "codigos": ["507201"],
+        "descricao": "Conector SMA para aplicações de alta frequência.",
+        "especificacoes": {
+          "impedancia": "50 Ω",
+          "frequenciaMaxima": "18 GHz"
+        },
+        "aplicacoes": ["Alta frequência", "Aplicações compactas"]
+      }
+    ]
+  },
+  "cabos": [
+    {
+      "nome": "Cabo coaxial RG-58",
+      "modelo": "RG-58",
+      "codigos": ["508001"],
+      "descricao": "Cabo coaxial flexível para aplicações móveis.",
+      "especificacoes": {
+        "impedancia": "50 Ω",
+        "atenuacao": "0,5 dB/m @ 400 MHz",
+        "diametro": "5 mm"
+      },
+      "aplicacoes": ["Conexões móveis", "Baixa potência"]
+    },
+    {
+      "nome": "Cabo coaxial RG-213",
+      "modelo": "RG-213",
+      "codigos": ["508002"],
+      "descricao": "Cabo coaxial de baixa perda para aplicações fixas.",
+      "especificacoes": {
+        "impedancia": "50 Ω",
+        "atenuacao": "0,2 dB/m @ 400 MHz",
+        "diametro": "10,3 mm"
+      },
+      "aplicacoes": ["Aplicações fixas", "Baixa perda", "Alta potência"]
+    }
+  ],
+  "combinadores": [
+    {
+      "nome": "Combinador 2x1",
+      "modelo": "COMB-2x1",
+      "codigos": ["509001"],
+      "descricao": "Combinador para dois transmissores em uma antena.",
+      "especificacoes": {
+        "frequencia": "136-174 MHz",
+        "impedancia": "50 Ω",
+        "potenciaMaxima": "200 Watts",
+        "isolacao": "25 dB"
+      },
+      "aplicacoes": ["Múltiplos transmissores", "Economia de antenas"]
+    }
+  ]
+}
