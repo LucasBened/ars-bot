@@ -1,4 +1,4 @@
-# WhatsApp Bot - ARS Eletrônica
+# Assistente Virtual Bot - ARS Eletrônica
 
 <div align="center">
 
