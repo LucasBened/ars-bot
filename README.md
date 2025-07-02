@@ -56,7 +56,7 @@ Este bot para WhatsApp foi desenvolvido para proporcionar atendimento automatiza
 
 ```bash
 git clone [url-do-repositorio]
-cd wpp-bot
+cd ars-bot
 ```
 
 #### 2. Instale as dependências
