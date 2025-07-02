@@ -156,7 +156,6 @@ wpp-bot/
 │       └── messageRequest.ts  # Lógica de processamento de mensagens e integração com Gemini AI
 │
 ├── instructions.ts        # Base de conhecimento de produtos e informações institucionais
-├── dist/                  # Código compilado (gerado pelo TypeScript)
 ├── .env.example           # Exemplo de variáveis de ambiente
 ├── package.json           # Dependências e scripts
 ├── tsconfig.json          # Configuração do TypeScript
