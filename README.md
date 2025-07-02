@@ -113,7 +113,7 @@ O servidor será iniciado em `http://localhost:3100`
 | **Técnico**       | • "Qual antena funciona em 450MHz?"<br>• "Especificações do duplexador DPS-450/15-3C"<br>• "Preciso de uma antena para faixa marítima" |
 | **Institucional** | • "Quais são as certificações da ARS?"<br>• "Quais os diferenciais da empresa?"<br>• "Quando a empresa foi fundada?"                   |
 
-## � API
+## 💾 API
 
 ### Endpoints
 
