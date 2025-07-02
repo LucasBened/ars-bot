@@ -51,6 +51,10 @@ Thumbs.db
 /coverage
 /.nyc_output
 
+# Test files (arquivos de teste temporários)
+test-*.js
+compare-*.js
+
 # Temporary files
 *.tmp
 *.temp

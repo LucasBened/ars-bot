@@ -31,12 +31,13 @@ Este bot para WhatsApp foi desenvolvido para proporcionar atendimento automatiza
 
 ## ✨ Funcionalidades
 
-| Categoria          | Recursos                                                                                                                             |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Catálogo**       | • Listagem completa de produtos<br>• Filtro por categoria (antenas, duplexadores, conectores, cabos)<br>• Busca por código ou modelo |
-| **Especificações** | • Detalhes técnicos completos<br>• Compatibilidade por frequência<br>• Aplicações recomendadas                                       |
-| **Informações**    | • Dados institucionais<br>• Certificações e homologações<br>• Análise de mercado e concorrentes<br>• Diferenciais competitivos       |
-| **Suporte**        | • Recomendações baseadas em necessidades<br>• Respostas contextualizadas<br>• Informações de contato                                 |
+| Categoria             | Recursos                                                                                                                                                                                                                                                                     |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Catálogo**          | • Listagem completa de produtos<br>• Filtro por categoria (antenas, duplexadores, conectores, cabos)<br>• Busca por código ou modelo                                                                                                                                         |
+| **Especificações**    | • Detalhes técnicos completos<br>• Compatibilidade por frequência<br>• Aplicações recomendadas                                                                                                                                                                               |
+| **Informações**       | • Dados institucionais<br>• Certificações e homologações<br>• Análise de mercado e concorrentes<br>• Diferenciais competitivos                                                                                                                                               |
+| **Busca Inteligente** | • **Busca profunda no site**: Quando não encontra produto localmente, busca automaticamente no site<br>• **Fallback transparente**: Busca web como segunda opção sem interromper a conversa<br>• **Orientações específicas**: Direciona usuário para seções corretas do site |
+| **Suporte**           | • Recomendações baseadas em necessidades<br>• Respostas contextualizadas<br>• Informações de contato<br>• **Navegação guiada no site**: Orienta onde encontrar produtos específicos no site oficial                                                                          |
 
 ## 🚀 Configuração
 
@@ -107,21 +108,47 @@ O servidor será iniciado em `http://localhost:3100`
 
 ### Exemplos de perguntas para o bot
 
-| Categoria         | Exemplos de Perguntas                                                                                                                  |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **Produtos**      | • "Mostre o catálogo de antenas"<br>• "Quais conectores tipo N vocês têm?"<br>• "Preciso de um cabo coaxial de baixa perda"            |
-| **Técnico**       | • "Qual antena funciona em 450MHz?"<br>• "Especificações do duplexador DPS-450/15-3C"<br>• "Preciso de uma antena para faixa marítima" |
-| **Institucional** | • "Quais são as certificações da ARS?"<br>• "Quais os diferenciais da empresa?"<br>• "Quando a empresa foi fundada?"                   |
+| Categoria            | Exemplos de Perguntas                                                                                                                  |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Produtos**         | • "Mostre o catálogo de antenas"<br>• "Quais conectores tipo N vocês têm?"<br>• "Preciso de um cabo coaxial de baixa perda"            |
+| **Técnico**          | • "Qual antena funciona em 450MHz?"<br>• "Especificações do duplexador DPS-450/15-3C"<br>• "Preciso de uma antena para faixa marítima" |
+| **Institucional**    | • "Quais são as certificações da ARS?"<br>• "Quais os diferenciais da empresa?"<br>• "Quando a empresa foi fundada?"                   |
+| **Busca Específica** | • "Antena heliflex FME"<br>• "MV-00D GPS especificações"<br>• "Conector SMA modelo especial" _(Aciona busca profunda e orientações)_   |
+
+### 🔍 Sistema de Busca Inteligente
+
+O bot possui um sistema avançado de busca que funciona em camadas:
+
+1. **Busca Local**: Primeiro verifica a base de dados local para respostas rápidas
+2. **Detecção de Produtos Específicos**: Identifica quando o usuário busca um produto/modelo específico
+3. **Busca Profunda no Site**: Quando não encontra localmente, faz busca automática no site da ARS Eletrônica
+4. **Orientações Personalizadas**: Se o produto não existir, orienta o usuário sobre onde procurar no site
+
+#### Exemplo de Funcionamento:
+
+```
+Usuário: "Antena heliflex modelo XYZ-123"
+
+Bot: Não encontrei esse modelo específico em nossa base local.
+     Realizei uma busca completa em nosso site e recomendo
+     verificar as seguintes seções:
+
+     📡 Antenas Heliflex: https://arseletronica.com.br/solucoes/ → "Antenas" → "Heliflex"
+     🔍 Busca por modelo: Use a busca do site com código "XYZ-123"
+     📞 Contato Direto: (11) 5523-9811
+```
 
 ## 💾 API
 
 ### Endpoints
 
-| Método | Endpoint   | Descrição                    | Payload                 | Resposta                                                             |
-| ------ | ---------- | ---------------------------- | ----------------------- | -------------------------------------------------------------------- |
-| `POST` | `/message` | Enviar mensagem para o bot   | `{"message": "string"}` | `{"message": "string"}`                                              |
-| `GET`  | `/history` | Obter histórico de conversas | -                       | `[{"role": "user/model", "content": "string", "timestamp": "date"}]` |
-| `GET`  | `/`        | Verificar status do servidor | -                       | `{"status": "online", "uptime": "string"}`                           |
+| Método | Endpoint   | Descrição                         | Payload                 | Resposta                                                             |
+| ------ | ---------- | --------------------------------- | ----------------------- | -------------------------------------------------------------------- |
+| `POST` | `/message` | Enviar mensagem para o bot        | `{"message": "string"}` | `{"message": "string"}` _(inclui busca profunda automática)_         |
+| `POST` | `/search`  | Busca direta sem IA               | `{"query": "string"}`   | `{"results": "string", "query": "string"}`                           |
+| `GET`  | `/history` | Obter histórico de conversas      | -                       | `[{"role": "user/model", "content": "string", "timestamp": "date"}]` |
+| `GET`  | `/status`  | Status do servidor                | -                       | `{"status": "online", "features": {...}}`                            |
+| `GET`  | `/`        | Verificar se servidor está online | -                       | `"Servidor rodando. Envie uma mensagem POST para /message."`         |
 
 ### Exemplo de integração
 
@@ -152,11 +179,21 @@ wpp-bot/
 ├── src/
 │   ├── index.ts           # Servidor Express e rotas
 │   ├── config.ts          # Configurações e variáveis de ambiente
-│   └── ai/
-│       └── messageRequest.ts  # Lógica de processamento de mensagens e integração com Gemini AI
+│   ├── ai/
+│   │   └── messageRequest.ts  # Lógica de processamento de mensagens e integração com Gemini AI
+│   └── data/
+│       ├── dataManager.ts     # Sistema de busca local e web, orientações do site
+│       ├── empresa.json       # Informações institucionais
+│       ├── produtos.json      # Catálogo completo de produtos
+│       ├── conectores-completos.json  # Base de conectores
+│       ├── certificacoes.json # Certificações e homologações
+│       ├── aplicacoes.json    # Aplicações e frequências
+│       ├── aplicacoes-segmentos.json  # Segmentos de mercado
+│       ├── glossario-tecnico.json     # Termos técnicos
+│       └── analise-estrategica.json   # Análise de mercado
 │
-├── instructions.ts        # Base de conhecimento de produtos e informações institucionais
 ├── .env.example           # Exemplo de variáveis de ambiente
+├── .gitignore             # Arquivos ignorados (inclui test-*.js)
 ├── package.json           # Dependências e scripts
 ├── tsconfig.json          # Configuração do TypeScript
 └── README.md              # Documentação
@@ -174,15 +211,33 @@ A base de conhecimento do bot inclui:
   - Especificações ambientais (resistência a intempéries)
 - **Certificações**: Informações sobre homologações e certificados nacionais e internacionais
 - **Análise de Mercado**: Posicionamento estratégico, diferenciais e concorrentes
+- **Sistema de Busca Web**: Integração com o site oficial para busca profunda de produtos
+- **Orientações de Navegação**: Direcionamento inteligente para seções específicas do site
 
 ### Mapa de Conteúdo da Base de Conhecimento
 
-| Seção                | Subseções                                            | Descrição                             |
-| -------------------- | ---------------------------------------------------- | ------------------------------------- |
-| `empresa`            | identificacao, institucional, mercado, certificacoes | Informações sobre a empresa           |
-| `catalogoProdutos`   | antenas, duplexadores, cabos, conectores             | Produtos organizados por categoria    |
-| `analiseEstrategica` | mercado, aplicacoesPorSegmento                       | Informações de mercado e competitivas |
-| `funcoesBusca`       | buscarProduto, buscarPorFrequencia, etc.             | Funções de busca na base de dados     |
+| Arquivo JSON                | Conteúdo                                       | Descrição                             |
+| --------------------------- | ---------------------------------------------- | ------------------------------------- |
+| `empresa.json`              | identificacao, institucional, mercado          | Informações sobre a empresa           |
+| `produtos.json`             | antenas, duplexadores, cabos, conectores       | Produtos organizados por categoria    |
+| `conectores-completos.json` | serieN, serieBNC, serieUHF, serieTNC, etc.     | Base completa de conectores           |
+| `certificacoes.json`        | nacionais, internacionais, gestao              | Certificações e homologações          |
+| `aplicacoes.json`           | frequencias, aplicacoes, tecnologias           | Informações técnicas de aplicação     |
+| `aplicacoes-segmentos.json` | segurancaPublica, utilities, agronegocio, etc. | Aplicações por segmento de mercado    |
+| `glossario-tecnico.json`    | termosRF, equipamentos, medidas, antenas       | Termos técnicos especializados        |
+| `analise-estrategica.json`  | mercado, aplicacoesPorSegmento                 | Informações de mercado e competitivas |
+
+### 🌐 Integração com Site Oficial
+
+O sistema possui integração inteligente com https://arseletronica.com.br:
+
+- **Busca Automática**: Quando não encontra produto localmente, busca automaticamente no site
+- **Múltiplas Seções**: Verifica produtos, soluções, antenas, conectores e outras seções
+- **Orientações Específicas**: Gera direcionamentos personalizados baseados no tipo de produto:
+  - Antenas Heliflex → `/solucoes/` → "Antenas" → "Heliflex"
+  - Conectores SMA → `/solucoes/` → "Conectores" → "Série SMA"
+  - Produtos com código → Busca direta com o código no site
+- **Fallback Inteligente**: Sempre oferece contato direto quando não encontra o produto
 
 ## 🤝 Contribuição
 
@@ -198,19 +253,23 @@ Contribuições são bem-vindas! Siga estas etapas:
 
 ### Funcionalidades Implementadas
 
-| Status | Categoria         | Funcionalidade          | Descrição                                                     |
-| :----: | ----------------- | ----------------------- | ------------------------------------------------------------- |
-|   ✅   | **Core**          | Base de Conhecimento    | Estrutura completa de dados sobre produtos, empresa e mercado |
-|   ✅   | **Core**          | Motor de Busca          | Sistema de busca por relevância, código e categoria           |
-|   ✅   | **Core**          | API REST                | Endpoints para mensagens e histórico de conversas             |
-|   ✅   | **Core**          | Integração Gemini AI    | Processamento de linguagem natural e geração de respostas     |
-|   ✅   | **Catálogo**      | Produtos Completos      | Todas as categorias e subcategorias de produtos cadastradas   |
-|   ✅   | **Catálogo**      | Especificações Técnicas | Detalhes elétricos, mecânicos e ambientais dos produtos       |
-|   ✅   | **Institucional** | Informações da Empresa  | História, missão, visão, valores e contatos                   |
-|   ✅   | **Institucional** | Certificações           | Certificados nacionais e internacionais de qualidade          |
-|   ✅   | **Mercado**       | Análise Competitiva     | Informações sobre concorrentes e posicionamento               |
-|   ✅   | **Mercado**       | Diferenciais            | Vantagens competitivas e fatores de crescimento               |
-|   ✅   | **Segmentos**     | Aplicações por Setor    | Soluções específicas para cada segmento de mercado            |
+| Status | Categoria          | Funcionalidade          | Descrição                                                                 |
+| :----: | ------------------ | ----------------------- | ------------------------------------------------------------------------- |
+|   ✅   | **Core**           | Base de Conhecimento    | Estrutura completa de dados sobre produtos, empresa e mercado             |
+|   ✅   | **Core**           | Motor de Busca          | Sistema de busca por relevância, código e categoria                       |
+|   ✅   | **Core**           | API REST                | Endpoints para mensagens e histórico de conversas                         |
+|   ✅   | **Core**           | Integração Gemini AI    | Processamento de linguagem natural e geração de respostas                 |
+|   ✅   | **Busca Avançada** | Busca Profunda no Site  | Sistema que busca automaticamente no site quando não encontra localmente  |
+|   ✅   | **Busca Avançada** | Fallback Transparente   | Busca web como segunda opção sem interromper a conversa                   |
+|   ✅   | **Busca Avançada** | Orientações Específicas | Direciona usuário para seções corretas do site baseado no tipo de produto |
+|   ✅   | **Busca Avançada** | Detecção de Produtos    | Identifica automaticamente quando usuário busca produto específico        |
+|   ✅   | **Catálogo**       | Produtos Completos      | Todas as categorias e subcategorias de produtos cadastradas               |
+|   ✅   | **Catálogo**       | Especificações Técnicas | Detalhes elétricos, mecânicos e ambientais dos produtos                   |
+|   ✅   | **Institucional**  | Informações da Empresa  | História, missão, visão, valores e contatos                               |
+|   ✅   | **Institucional**  | Certificações           | Certificados nacionais e internacionais de qualidade                      |
+|   ✅   | **Mercado**        | Análise Competitiva     | Informações sobre concorrentes e posicionamento                           |
+|   ✅   | **Mercado**        | Diferenciais            | Vantagens competitivas e fatores de crescimento                           |
+|   ✅   | **Segmentos**      | Aplicações por Setor    | Soluções específicas para cada segmento de mercado                        |
 
 ### Funcionalidades Pendentes
 

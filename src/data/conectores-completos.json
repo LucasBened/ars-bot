@@ -1,0 +1,237 @@
+{
+  "serieN": [
+    {
+      "nome": "Conector NM-35",
+      "modelo": "NM-35",
+      "codigos": ["508020"],
+      "url": "https://arseletronica.com.br/solucoes/conector-nm-35/",
+      "descricao": "Conector da série N macho com formato reto prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "11 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58"
+        }
+      }
+    },
+    {
+      "nome": "Conector NM-8",
+      "modelo": "NM-8",
+      "codigos": ["508007"],
+      "url": "https://arseletronica.com.br/solucoes/conector-nm-8/",
+      "descricao": "Conector da série N macho com formato reto prensa cabo para fixação em cabos RG-8/RGC-8.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "11 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-8/RGC-8"
+        }
+      }
+    },
+    {
+      "nome": "Conector NM-213",
+      "modelo": "NM-213",
+      "codigos": ["508019"],
+      "url": "https://arseletronica.com.br/solucoes/conector-nm-213/",
+      "descricao": "Conector da série N macho com formato reto prensa cabo para fixação em cabos RG-213/RGC-213.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "11 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-213/RGC-213"
+        }
+      }
+    },
+    {
+      "nome": "Conector NF-35",
+      "modelo": "NF-35",
+      "codigos": ["508023"],
+      "url": "https://arseletronica.com.br/solucoes/conector-nf-35/",
+      "descricao": "Conector da série N fêmea com formato reto prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "11 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58"
+        }
+      }
+    },
+    {
+      "nome": "Conector N 90° macho",
+      "modelo": "NM-35/90",
+      "codigos": ["508043"],
+      "url": "https://arseletronica.com.br/solucoes/conector-n-90-macho/",
+      "descricao": "Conector da série N macho angulado 90° prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "11 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58",
+          "angulacao": "90°"
+        }
+      }
+    },
+    {
+      "nome": "Conector NC-53",
+      "modelo": "NC-53",
+      "codigos": ["508016"],
+      "url": "https://arseletronica.com.br/solucoes/conector-nc-53/",
+      "descricao": "Conector da série N tipo painel fêmea para equipamentos de radiocomunicação.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "vswr": "≤ 1,3 até 4 GHz",
+          "frequenciaMaxima": "11 GHz",
+          "tensaoMaxima": "1500V",
+          "temperaturaOperacao": "-65°C a 155°C"
+        },
+        "mecanicas": {
+          "materialPino": "Latão banhado a ouro",
+          "isolamento": "PTFE",
+          "materialCorpo": "Latão niquelado",
+          "tipoMontagem": "Flange de 4 furos"
+        }
+      }
+    }
+  ],
+  "serieBNC": [
+    {
+      "nome": "Conector BNC macho",
+      "modelo": "BNCM-35",
+      "codigos": ["508030"],
+      "url": "https://arseletronica.com.br/solucoes/conector-bnc-macho/",
+      "descricao": "Conector BNC macho com formato reto prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "4 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58"
+        }
+      }
+    },
+    {
+      "nome": "Conector BNC fêmea",
+      "modelo": "BNCF-35",
+      "codigos": ["508033"],
+      "url": "https://arseletronica.com.br/solucoes/conector-bnc-femea/",
+      "descricao": "Conector BNC fêmea com formato reto prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "4 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58"
+        }
+      }
+    }
+  ],
+  "serieUHF": [
+    {
+      "nome": "Conector UHF macho",
+      "modelo": "UM-35",
+      "codigos": ["508025"],
+      "url": "https://arseletronica.com.br/solucoes/conector-uhf-macho/",
+      "descricao": "Conector UHF macho com formato reto prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "300 MHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58"
+        }
+      }
+    },
+    {
+      "nome": "Conector UC-27",
+      "modelo": "UC-27",
+      "codigos": ["508026"],
+      "url": "https://arseletronica.com.br/solucoes/conector-uc-27/",
+      "descricao": "Conector UHF fêmea para montagem em painéis de equipamentos de radiocomunicação.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "vswr": "≤ 1,3 até 300 MHz",
+          "frequenciaMaxima": "500 MHz",
+          "temperaturaOperacao": "-25°C a 70°C"
+        },
+        "mecanicas": {
+          "materialPino": "Latão banhado a ouro",
+          "isolamento": "PTFE",
+          "materialCorpo": "Latão niquelado",
+          "tipoMontagem": "Painel com flange 4 furos"
+        }
+      }
+    }
+  ],
+  "serieTNC": [
+    {
+      "nome": "Conector TNC macho",
+      "modelo": "TNCM-35",
+      "codigos": ["508035"],
+      "url": "https://arseletronica.com.br/solucoes/conector-tnc-macho/",
+      "descricao": "Conector TNC macho com formato reto prensa cabo para fixação em cabos RG-58/RGC-58.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "11 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Latão",
+          "acabamento": "Niquelado",
+          "caboCompativel": "RG-58/RGC-58"
+        }
+      }
+    }
+  ],
+  "serieFakra": [
+    {
+      "nome": "Conector Fakra macho A azul",
+      "modelo": "FAKRA A/M",
+      "codigos": ["508060"],
+      "url": "https://arseletronica.com.br/solucoes/conector-fakra-macho-a-azul/",
+      "descricao": "Conector Fakra macho código A (azul) para aplicações automotivas.",
+      "especificacoes": {
+        "eletricas": {
+          "impedanciaNominal": "50 Ω",
+          "frequenciaMaxima": "6 GHz"
+        },
+        "mecanicas": {
+          "materialBase": "Policarbonato",
+          "cor": "Azul",
+          "codigo": "A",
+          "aplicacao": "Automotiva"
+        }
+      }
+    }
+  ]
+}

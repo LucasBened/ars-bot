@@ -1,0 +1,45 @@
+{
+  "termosRF": {
+    "VSWR": "Voltage Standing Wave Ratio - razão entre tensão máxima e mínima em uma linha de transmissão.",
+    "ROE": "Razão de Onda Estacionária - medida da eficiência de transferência de energia.",
+    "dBi": "Decibel isotrópico - medida de ganho de antena em relação a um radiador isotrópico ideal.",
+    "dBm": "Decibel miliwatt - medida de potência absoluta referenciada a 1 miliwatt.",
+    "Impedância": "Oposição ao fluxo de corrente alternada, medida em ohms (Ω). Sistemas de RF usam tipicamente 50Ω.",
+    "Ganho": "Capacidade de uma antena de direcionar energia eletromagnética, medido em dBi ou dBd.",
+    "Polarização": "Orientação do campo elétrico da onda eletromagnética (vertical, horizontal ou circular).",
+    "Diagrama de Radiação": "Representação gráfica da distribuição espacial da energia radiada por uma antena.",
+    "Frequency Response": "Resposta em frequência - variação das características do sistema em função da frequência."
+  },
+  "equipamentos": {
+    "Duplexador": "Dispositivo que permite o uso simultâneo de transmissor e receptor na mesma antena.",
+    "Multiacoplador": "Dispositivo que permite conectar múltiplos receptores a uma única antena.",
+    "Balun": "Dispositivo que converte sinais balanceados em não-balanceados ou vice-versa.",
+    "Atenuador": "Dispositivo que reduz a amplitude do sinal de forma controlada.",
+    "Combinador": "Dispositivo que permite conectar múltiplos transmissores a uma única antena.",
+    "Divisor": "Dispositivo que divide um sinal em múltiplas saídas.",
+    "Acoplador Direcional": "Dispositivo que acopla uma pequena porção do sinal para monitoramento."
+  },
+  "medidas": {
+    "Link Budget": "Cálculo que determina a viabilidade de um enlace de RF considerando todas as perdas e ganhos.",
+    "Perda de Inserção": "Redução de potência causada pela inserção de um componente no sistema.",
+    "Isolação": "Capacidade de um dispositivo de separar sinais entre portas diferentes.",
+    "Fator de Ruído": "Medida da degradação da relação sinal-ruído causada por um componente.",
+    "Banda Passante": "Faixa de frequências na qual um dispositivo opera dentro de especificações."
+  },
+  "antenas": {
+    "Omnidirecional": "Antena que irradia energia igualmente em todas as direções no plano horizontal.",
+    "Direcional": "Antena que concentra a energia em uma direção específica.",
+    "Yagi": "Tipo de antena direcional com elementos parasitas para aumentar o ganho.",
+    "Dipolo": "Antena básica formada por dois elementos condutores.",
+    "Monopolo": "Antena formada por um único elemento sobre um plano terra.",
+    "Helicoidal": "Antena em forma de hélice, geralmente com polarização circular."
+  },
+  "conectores": {
+    "Série N": "Conectores rosqueados para aplicações até 11 GHz, impedância 50Ω.",
+    "Série BNC": "Conectores com travamento bayoneta para aplicações até 4 GHz.",
+    "Série UHF": "Conectores rosqueados para aplicações até 300 MHz.",
+    "Série TNC": "Conectores rosqueados similares aos BNC para aplicações até 11 GHz.",
+    "Série SMA": "Conectores miniaturizados para aplicações até 18 GHz.",
+    "Fakra": "Conectores automotivos com codificação por cores."
+  }
+}

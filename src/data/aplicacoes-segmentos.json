@@ -1,0 +1,175 @@
+{
+  "segurancaPublica": {
+    "descricao": "Soluções completas para Polícia Militar, Civil, Bombeiros, Defesa Civil e órgãos de segurança pública",
+    "caracteristicasEspecificas": [
+      "Comunicação crítica e confiável",
+      "Resistência a intempéries",
+      "Baixa manutenção",
+      "Conformidade com normas de segurança"
+    ],
+    "produtosRecomendados": [
+      {
+        "categoria": "Antenas Móveis",
+        "produtos": [
+          "MU-55 LTE para comunicação celular",
+          "MV-70AI para VHF com base magnética",
+          "Antenas móveis com base NMO"
+        ]
+      },
+      {
+        "categoria": "Infraestrutura Fixa",
+        "produtos": [
+          "Duplexadores FDV-4X e FDV-6 para repetidoras",
+          "Antenas ASA-174/5R omnidirecionais",
+          "Combinadores para múltiplos canais"
+        ]
+      },
+      {
+        "categoria": "Equipamentos Portáteis",
+        "produtos": [
+          "Mochila tática VHF para operações especiais",
+          "Antenas telescópicas portáteis",
+          "Protetores contra surtos"
+        ]
+      }
+    ],
+    "casosDeUso": [
+      "Comunicação entre viaturas e base",
+      "Operações especiais em campo",
+      "Sistemas de emergência",
+      "Cobertura em eventos públicos"
+    ]
+  },
+  "utilities": {
+    "descricao": "Soluções para empresas de energia elétrica, água, gás, petróleo e telecomunicações",
+    "caracteristicasEspecificas": [
+      "Alta confiabilidade operacional",
+      "Resistência a ambientes industriais",
+      "Longo alcance de comunicação",
+      "Baixo custo de manutenção"
+    ],
+    "produtosRecomendados": [
+      {
+        "categoria": "Comunicação Fixa",
+        "produtos": [
+          "Antenas direcionais de alto ganho",
+          "Duplexadores de alta potência",
+          "Cabos de baixa perda"
+        ]
+      },
+      {
+        "categoria": "Monitoramento Remoto",
+        "produtos": [
+          "Antenas LTE para IoT",
+          "Sistemas combinadores",
+          "Conectores resistentes"
+        ]
+      }
+    ],
+    "casosDeUso": [
+      "Smart Grid - monitoramento de redes elétricas",
+      "Controle de estações de tratamento",
+      "Monitoramento de gasodutos",
+      "Comunicação em refinarias"
+    ]
+  },
+  "agronegocioRTK": {
+    "descricao": "Soluções para agricultura de precisão, controle de frotas agrícolas e posicionamento RTK",
+    "caracteristicasEspecificas": [
+      "Precisão de posicionamento centimétrica",
+      "Cobertura em áreas extensas",
+      "Resistência a ambiente rural",
+      "Integração com sistemas GPS"
+    ],
+    "produtosRecomendados": [
+      {
+        "categoria": "Posicionamento",
+        "produtos": [
+          "Antenas GPS de alta precisão",
+          "Antenas multi-banda GNSS",
+          "Cabos de baixa perda"
+        ]
+      },
+      {
+        "categoria": "Comunicação Rural",
+        "produtos": [
+          "Antenas de longo alcance",
+          "Repetidoras móveis",
+          "Sistemas combinadores"
+        ]
+      }
+    ],
+    "casosDeUso": [
+      "Agricultura de precisão",
+      "Controle autônomo de tratores",
+      "Monitoramento de gado",
+      "Gestão de frotas agrícolas"
+    ]
+  },
+  "mineracaoIndustria": {
+    "descricao": "Comunicações para mineração, siderurgia, petroquímica e indústria pesada",
+    "caracteristicasEspecificas": [
+      "Extrema robustez",
+      "Resistência a ambientes severos",
+      "Comunicação subterrânea",
+      "Segurança intrínseca"
+    ],
+    "produtosRecomendados": [
+      {
+        "categoria": "Ambientes Severos",
+        "produtos": [
+          "Antenas blindadas",
+          "Conectores selados",
+          "Cabos irradiantes para túneis"
+        ]
+      },
+      {
+        "categoria": "Comunicação Industrial",
+        "produtos": [
+          "Duplexadores industriais",
+          "Filtros de alta rejeição",
+          "Protetores contra surtos"
+        ]
+      }
+    ],
+    "casosDeUso": [
+      "Comunicação em minas subterrâneas",
+      "Controle de processos industriais",
+      "Segurança em refinarias",
+      "Monitoramento de equipamentos"
+    ]
+  },
+  "lteIoT": {
+    "descricao": "Componentes para redes LTE privadas, IoT industrial e comunicação M2M",
+    "caracteristicasEspecificas": [
+      "Baixo consumo de energia",
+      "Conectividade massiva",
+      "Latência reduzida",
+      "Cobertura estendida"
+    ],
+    "produtosRecomendados": [
+      {
+        "categoria": "Infraestrutura LTE",
+        "produtos": [
+          "Antenas LTE banda 28 (700MHz)",
+          "Antenas multi-banda",
+          "Combinadores LTE"
+        ]
+      },
+      {
+        "categoria": "Dispositivos IoT",
+        "produtos": [
+          "Antenas compactas para sensores",
+          "Conectores miniaturizados",
+          "Cabos flexíveis"
+        ]
+      }
+    ],
+    "casosDeUso": [
+      "Redes privadas LTE",
+      "IoT industrial",
+      "Cidades inteligentes",
+      "Indústria 4.0"
+    ]
+  }
+}

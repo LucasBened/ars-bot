@@ -1,0 +1,86 @@
+{
+  "moveis": [
+    {
+      "nome": "Antena móvel MU-55 LTE",
+      "modelo": "MU-55 LTE",
+      "codigos": ["501695"],
+      "url": "https://arseletronica.com.br/wp-content/uploads/2024/12/501695-MU-55-LTE.pdf",
+      "descricao": "Antena de ganho com baixo perfil e base padrão NMO, projetada para aplicações móveis em sistemas LTE na banda 28. Construída com materiais resistentes a impactos e intempéries. Acompanha cabo coaxial RG-58 de 5 metros e conector SMA-1.",
+      "especificacoes": {
+        "eletricas": {
+          "frequencia": "698 / 806 MHz",
+          "ganho": "3 dBi",
+          "vswr": "≤ 1,8:1",
+          "impedanciaNominal": "50 Ω",
+          "potenciaMaxima": "150 Watts",
+          "polarizacao": "Vertical"
+        },
+        "mecanicas": {
+          "diametro": "37 mm",
+          "comprimento": "62 mm",
+          "peso": "0,163 Kg",
+          "materialBase": "Base de latão cromado, radome em nylon de alta resistência.",
+          "fixacao": "Furo de 19mm em superfície metálica (base NMO).",
+          "conector": "SMA-1",
+          "resistenciaVentoOperacional": "≥ 110 Km/h",
+          "resistenciaVentoSobrevivencia": "≥ 200 Km/h",
+          "areaExposicaoVento": "0,0023 m²"
+        }
+      },
+      "caracteristicasAdicionais": [
+        "Resistente a impactos e intempéries",
+        "Baixo perfil para aplicações móveis",
+        "Acompanha cabo coaxial RG-58 de 5 metros"
+      ],
+      "downloads": [
+        {
+          "titulo": "Prospecto",
+          "url": "https://arseletronica.com.br/wp-content/uploads/2024/12/501695-MU-55-LTE.pdf"
+        }
+      ]
+    },
+    {
+      "nome": "Antena móvel MU-55 LTEI 4G",
+      "modelo": "MU-55 LTEI 4G",
+      "codigos": ["501696"],
+      "url": "https://arseletronica.com.br/solucoes/antena-movel-mu-55-ltei-4g/",
+      "descricao": "Antena móvel para aplicações em 4G.",
+      "especificacoes": {},
+      "caracteristicasAdicionais": ["Aplicação em sistemas 4G", "Design móvel"],
+      "downloads": []
+    },
+    {
+      "nome": "Antena móvel MV-70AI",
+      "modelo": "MV-70AI",
+      "codigos": ["501835"],
+      "url": "https://arseletronica.com.br/solucoes/antena-movel-mv-70ai/",
+      "descricao": "Antena vertical de ganho com 5/8 de onda, projetada para uso em estações móveis. Possui base magnética, elemento irradiante reduzido e conector padrão NMO. Acompanha cabo coaxial de 5 metros.",
+      "especificacoes": {
+        "eletricas": {
+          "frequencia": "130/174MHz",
+          "comprimentoDeOnda": "5/8",
+          "vswr": "≤ 1,5:1",
+          "impedanciaNominal": "50 Ω",
+          "potenciaMaxima": "200 Watts",
+          "polarizacao": "Vertical",
+          "ganho": "5,15 dBi"
+        },
+        "mecanicas": {
+          "peso": "0,960 Kg",
+          "fixacao": "Base magnética",
+          "acabamento": "Aloy fosco de alta condutibilidade",
+          "resistenciaVentoOperacional": "≥ 110 Km/h",
+          "resistenciaVentoSobrevivencia": "≥ 200 Km/h",
+          "conector": "UM-6 / UM-1/7 / QMA",
+          "materialBase": "Latão / aço inox / policarbonato"
+        }
+      },
+      "caracteristicasAdicionais": [
+        "Elemento irradiante reduzido",
+        "Base magnética de alta fixação",
+        "Acompanha cabo coaxial de 5 metros"
+      ],
+      "downloads": []
+    }
+  ]
+}

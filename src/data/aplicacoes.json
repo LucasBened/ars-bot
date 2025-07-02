@@ -1,0 +1,95 @@
+{
+  "frequencias": {
+    "vhf": {
+      "faixa": "136-174 MHz",
+      "aplicacoes": [
+        "Segurança pública",
+        "Transporte público",
+        "Aeronáutica",
+        "Radioamadorismo"
+      ],
+      "caracteristicas": [
+        "Maior alcance que UHF",
+        "Melhor propagação em área aberta",
+        "Antenas maiores"
+      ]
+    },
+    "uhf": {
+      "faixa": "380-512 MHz",
+      "aplicacoes": [
+        "Segurança pública",
+        "Indústria",
+        "Comercial",
+        "Utilities"
+      ],
+      "caracteristicas": [
+        "Melhor propagação em área urbana",
+        "Antenas menores",
+        "Maior penetração em edifícios"
+      ]
+    },
+    "lte": {
+      "faixa": "698-806 MHz (Banda 28)",
+      "aplicacoes": ["Comunicação de dados", "IoT", "M2M", "Telemetria"],
+      "caracteristicas": [
+        "Alta velocidade de dados",
+        "Baixa latência",
+        "Cobertura ampla"
+      ]
+    }
+  },
+  "aplicacoes": {
+    "segurancaPublica": {
+      "descricao": "Sistemas de comunicação para polícia, bombeiros e emergência médica",
+      "produtosRecomendados": [
+        "Duplexadores alta isolação",
+        "Antenas omnidirecionais",
+        "Conectores N série"
+      ],
+      "frequenciasComuns": ["136-174 MHz", "380-512 MHz"]
+    },
+    "utilities": {
+      "descricao": "Comunicação para concessionárias de energia, água e gás",
+      "produtosRecomendados": [
+        "Antenas direcionais",
+        "Cabos baixa perda",
+        "Duplexadores alta potência"
+      ],
+      "frequenciasComuns": ["450-470 MHz", "896-901 MHz"]
+    },
+    "industria": {
+      "descricao": "Comunicação industrial, mineração e petroquímica",
+      "produtosRecomendados": [
+        "Antenas resistentes",
+        "Conectores selados",
+        "Cabos flexíveis"
+      ],
+      "frequenciasComuns": ["450-470 MHz", "380-400 MHz"]
+    }
+  },
+  "tecnologias": {
+    "analogica": {
+      "descricao": "Sistemas de comunicação analógica tradicionais",
+      "vantagens": ["Simplicidade", "Custo baixo", "Compatibilidade"],
+      "aplicacoes": ["Radioamadorismo", "Aplicações básicas"]
+    },
+    "digital": {
+      "p25": {
+        "descricao": "Padrão digital para segurança pública",
+        "vantagens": [
+          "Melhor qualidade de áudio",
+          "Maior eficiência espectral",
+          "Recursos avançados"
+        ]
+      },
+      "dmr": {
+        "descricao": "Digital Mobile Radio para aplicações comerciais",
+        "vantagens": [
+          "Dupla capacidade",
+          "Interoperabilidade",
+          "Custo-benefício"
+        ]
+      }
+    }
+  }
+}

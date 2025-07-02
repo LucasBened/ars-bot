@@ -1,0 +1,40 @@
+{
+  "identificacao": {
+    "nomeOficial": "ARS Eletrônica Industrial Ltda.",
+    "nomeComum": "ARS Eletrônica",
+    "termoDeBuscaUsuario": "Antenas Profissionais (APS)",
+    "contatoPrincipal": "+55 (11) 5523-9811",
+    "sede": "São Paulo, SP, Brasil",
+    "website": "https://arseletronica.com.br/"
+  },
+  "institucional": {
+    "fundacao": {
+      "ano": 1952,
+      "local": "Itaúna, MG",
+      "fundador": "Álvaro Ricardo de Souza"
+    },
+    "historia": "Fundada em 1952 em Itaúna, Minas Gerais, por Álvaro Ricardo de Souza, um autodidata que identificou a necessidade de fabricar produtos para o crescente mercado de radioamadorismo. A ARS Eletrônica é reconhecida como uma das pioneiras no segmento de radiofrequência no Brasil. Com a expansão da indústria de telecomunicações, a empresa ampliou seu portfólio para desenvolver e fabricar soluções que atendem tanto o mercado nacional quanto o internacional. Atualmente, a empresa está sediada em São Paulo e é dirigida pela terceira geração da família fundadora, que se dedica a incorporar modernidade e inovação, mantendo o legado de excelência e qualidade em seus produtos.",
+    "missao": "Trabalhar obstinadamente para entregar produtos genuínos, com altíssimo nível de qualidade, que possa estar sintonizado na mesma frequência dos nossos clientes e colaboradores, conectando pessoas e negócios.",
+    "visao": "Continuar sendo reconhecido como o maior e melhor fabricante de sistemas irradiantes, combinadores, assim como ser referência em soluções de conectividade e desenvolvimento de software e hardware, para todo mercado global.",
+    "valores": "Trabalhar de forma sustentável, primar pela ética, moral, bons costumes, sempre valorizando nossos colaboradores e parceiros de negócios."
+  },
+  "mercado": {
+    "posicionamentoEstrategico": "Posiciona-se como o maior e melhor fabricante de sistemas irradiantes e soluções de conectividade para o mercado global de telecomunicações, com um forte diferencial de fabricar produtos 100% nacionais.",
+    "segmentosAtendidos": [
+      "Telecomunicações",
+      "Segurança Pública",
+      "Utilities",
+      "Radioamadorismo",
+      "Telecomunicação móvel e fixa",
+      "Sistemas de radiocomunicação"
+    ],
+    "categoriasPrincipaisDeProdutos": [
+      "Antenas (móveis, omnidirecionais, direcionais, fixas, plano-terra, heliflex, marítimas)",
+      "Duplexadores e Filtros",
+      "Conectores (séries N, BNC, UHF, TNC, Fakra, SMA, FME, IEC, MMCX)",
+      "Cabos coaxiais e irradiantes",
+      "Combinadores",
+      "Acessórios e equipamentos de RF"
+    ]
+  }
+}
