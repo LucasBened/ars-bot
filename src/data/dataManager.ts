@@ -215,13 +215,26 @@ class DataManager {
     if (
       mensagemLower.includes("certificação") ||
       mensagemLower.includes("certificacao") ||
+      mensagemLower.includes("certificacoes") ||
+      mensagemLower.includes("certificações") ||
+      mensagemLower.includes("certificados") ||
+      mensagemLower.includes("certificado") ||
       mensagemLower.includes("anatel") ||
       mensagemLower.includes("iso") ||
-      mensagemLower.includes("certificado") ||
       mensagemLower.includes("homologação") ||
       mensagemLower.includes("homologacao") ||
+      mensagemLower.includes("homologações") ||
+      mensagemLower.includes("homologacoes") ||
       mensagemLower.includes("fcc") ||
-      mensagemLower.includes("inmetro")
+      mensagemLower.includes("inmetro") ||
+      mensagemLower.includes("normas") ||
+      mensagemLower.includes("norma") ||
+      mensagemLower.includes("qualidade") ||
+      mensagemLower.includes("conformidade") ||
+      mensagemLower.includes("rohs") ||
+      mensagemLower.includes("ce mark") ||
+      mensagemLower.includes("padrões") ||
+      mensagemLower.includes("padroes")
     ) {
       informacoes.push("=== CERTIFICAÇÕES ===");
       informacoes.push(JSON.stringify(this.certificacoes, null, 2));
